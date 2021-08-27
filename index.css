@@ -1,0 +1,109 @@
+@font-face {
+    font-family: myfont;
+    src: url(./fonts/Rubik-Regular.ttf);
+}
+html
+{
+    background-color: black;
+    font-family: myfont;
+}
+.title
+{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.appbar
+{
+    color: blanchedalmond;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.left{
+    font-family: myfont;
+    width: 100%;
+    color: #AE45FF;
+}
+
+.right
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+
+button
+{
+    margin: 30px 0;
+    background-color: transparent;
+    color: #AE45FF;
+    outline: none;
+    border: #AE45FF solid 2px;
+    padding: 20px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 250px;
+    font-family: myfont;
+}
+
+button:hover
+{
+    background-color: #AE45FF;
+    color: black;
+}
+
+.image
+{
+    border-radius: 10px;
+    border: #0c0014 solid 20px;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+}
+
+.item
+{
+    height: 150px;
+    width: 450px;
+    border: #ffffff solid 2px;
+    border-radius: 5px;
+    transition: 0.5s;
+    position: relative;
+    color: #ffffff;
+    padding: 0px 20px;
+    padding-top: 150px;
+}
+
+.item:hover
+{
+    border-color: #AE45FF;
+    transform: translateY(-5px);
+}
+
+.badge
+{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    color: #ffffff;
+    background-color: gray;
+    height: 100px;
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
