@@ -77,21 +77,25 @@ button:hover
 
 .item
 {
-    height: 150px;
-    width: 450px;
+    height: 250px;
+    width: 85%;
     border: #ffffff solid 2px;
     border-radius: 5px;
-    transition: 0.5s;
+    
     position: relative;
     color: #ffffff;
     padding: 0px 20px;
     padding-top: 150px;
+    font-size: 30px;
+    margin: 10px;
 }
 
 .item:hover
 {
     border-color: #AE45FF;
     transform: translateY(-5px);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .badge
@@ -106,4 +110,12 @@ button:hover
     margin-left: 20px;
     display: flex;
     flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .grid-container
+    {
+        grid-template-columns: auto;
+    }
 }
