@@ -119,3 +119,44 @@ button:hover
         grid-template-columns: auto;
     }
 }
+
+.item1
+{
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    grid-area: header;
+    border: #0c0c0c solid 1px;
+    background-color: red;
+}
+
+.item2
+{
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    grid-area: header2;
+    border: #000000 solid 1px;
+    background-color: red;
+
+}
+
+.item3
+{
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    grid-area: header3;
+    border: #000000 solid 1px;
+    background-color: rgb(218, 204, 204);
+
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 'header header header header header2 header2'
+    'header header header header header3 header3';
+    grid-gap: 50px;
+    width: 100%;
+}
+
